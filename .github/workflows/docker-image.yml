@@ -28,5 +28,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/pruebaPracticaDespliegue2:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/pruebaPracticaDespliegue2:${{ github.sha }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/pruebapracticadespliegue2:latest
+          ${{ secrets.DOCKERHUB_USERNAME }}/pruebapracticadespliegue2:${{ github.sha }}
