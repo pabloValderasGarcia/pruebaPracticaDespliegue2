@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  tomcat:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: tomcat
+    volumes:
+      - ./slider-test-0.0.1-SNAPSHOT.war:/usr/local/tomcat/webapps/slider-test-0.0.1-SNAPSHOT.war
+      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    ports:
+      - 8080:8080
